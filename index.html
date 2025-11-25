@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio | MField, Design shapes value" />
+    <title>Portfolio | MField</title>
+    <link rel="shortcut icon" href="./image/favicon.ico.png" type="image/png">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="topPage">
+    <!-- 背景アニメーション -->
+    <!-- <div class="bars">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div> -->
+    <!-- 背景のバー群（JSで12本生成） -->
+    <div class="bars" id="bars"></div>
+
+    <header class="siteHeader">
+        <nav class="wrapper siteHeader-inner">
+            <a href="/index.html"><img class="siteLogo" src="./image/logo.svg" alt="Portfolio Top | MField"></a>
+            <ul class="navMenu" id="navMenu">
+                <li><a href="#works">WORKS</a></li>
+                <li><a href="#about">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="topLead">
+            <!-- メニュー（最初は非表示） -->
+            <div class="leadContainer hidden" id="leadContainer">
+                <p class="fade-item delay-1">design shapes value</p>
+                <div class="fade-item siteName-item active">
+                    <div>
+                        <img class="siteName-label delay-2" id="siteName" src="./image/logoname.png"
+                            alt="Portfolio Top | MField">
+                        <!-- SVG border placeholder; JS will size/position it -->
+                        <svg class="svg-border" id="siteNameSvg" aria-hidden="true"></svg>
+                    </div>
+                </div>
+                <ul>
+                    <li class="fade-item siteName-item delay-3">
+                        <a href="#works">WORKS</a>
+                    </li>
+                    <li class="fade-item siteName-item delay-3">
+                        <a href="#about">ABOUT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <section id="works" class="wrapper">
+            <h2 class="section-title">WORKS</h2>
+            <div class="works-grid">
+                <a href="https://7b17mt-web.github.io/GotoMuseum.io/">
+                    <div class="work-card">
+                        <div class="card-img"><img src="./image/gotomuseum.jpg" alt="作品1"/></div>
+                        <div class="card-body">
+                            <h3>Go 2 Museum</h3>
+                            <p>自分の趣味のWebサイト、シンプルでわかりやすいデザイン。</p>
+                            <dl>
+                                <dt>担当業務</dt>
+                                <dd>ウェブデザイン&nbsp;&nbsp;コーディング&nbsp;&nbsp;写真</dd>
+                            </dl>
+                            <dl>
+                                <dt>スキル</dt>
+                                <dd>Figma&nbsp;&nbsp;Adobe Illustrator&nbsp;&nbsp;HTMC/CSS</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section id="about" class="wrapper">
+            <h2 class="section-title">ABOUT</h2>
+            <div class="about">
+                <img src="./image/architecture-2335909_1920 (1).jpg" alt="プロフィール画像"/>
+                <div class="about-text">
+                    <p>M Field &nbsp;&nbsp;ムギノと申します。</p>
+                    <br>
+                    <p>”Minimal design, maximum value.”</p>
+                    <br>
+                    <p>ミニマルなデザインアプローチによりサイトの価値を最大化する制作を追求しています。</p>
+                    <br>
+                    <p>余白と情報設計を最適化し、必要な情報を直感的に伝わるデザインを重視しています。</p>
+                    <p>シンプルだからこそ、価値が際立つデザインのサイトづくりをサポートいたします。</p>
+                    <br>
+                    <!-- <div class="skills">
+                        <div class="skill">HTML/CSS</div>
+                        <div class="skill">JavaScript</div>
+                        <div class="skill">Figma</div>
+                        <div class="skill">Illustrator</div>
+                        <div class="skill">Photoshop</div>
+                        <div class="skill">Premium Pro</div>
+                        <div class="skill">xd</div>
+                    </div> -->
+                    <p>スキル: HTML / CSS / JavaScript / Figma / Adobe Illustrator, Photoshop, Premium Pro, xd</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="wrapper">
+            <h2 class="section-title">CONTACT</h2>
+            <div class="contact">
+                <p>興味を持っていただけたら、ぜひご連絡ください。</p>
+                <a href="mailto:7b17mt@gmail.com">メールを送る</a>
+            </div>
+        </section>
+
+        <!-- <section id="contact" class="section contact">
+            <h2>Contact</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="お名前" required>
+                <input type="email" placeholder="メールアドレス" required>
+                <textarea rows="5" placeholder="お問い合わせ内容"></textarea>
+                <button type="submit">送信</button>
+            </form>
+        </section> -->
+    </main>
+
+    <footer>
+        <p>&copy; M Field. All rights reserved.</p>
+    </footer>
+
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
