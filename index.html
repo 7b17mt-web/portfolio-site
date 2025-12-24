@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio | MField, Design shapes value" />
+    <title>Portfolio | MField</title>
+    <link rel="shortcut icon" href="./image/favicon.ico.png" type="image/png">
+    <!-- slickのCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+    <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- RESET CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <!-- Google Gonts Aboreto/ Castoro / Zen Kaku GothicZen Kaku Gothic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aboreto&family=Castoro:ital@0;1&family=Zen+Kaku+Gothic+New&display=swap"
+        rel="stylesheet">
+    <!-- Original CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="topPage">
+    <!-- 背景アニメーション -->
+    <!-- <div class="bars">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div> -->
+    <!-- 背景のバー群（JSで12本生成） -->
+    <div class="bars" id="bars"></div>
+
+    <header class="siteHeader">
+        <nav class="wrapper siteHeader-inner">
+            <a href="./index.html"><img class="siteLogo" src="./image/logo.svg" alt="Portfolio Top | M Field"></a>
+            <ul class="navMenu" id="navMenu">
+                <li><a href="#works" class="entilte">WORKS</a></li>
+                <li><a href="#about" class="entilte">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="topHero" class="block">
+            <!-- メニュー（最初は非表示） -->
+            <div class="leadContainer hidden" id="leadContainer">
+                <p class="fade-item delay-1">design shapes value</p>
+                <div class="fade-item siteName-item active">
+                    <div>
+                        <img class="siteName-label delay-2" id="siteName" src="./image/logoname.svg"
+                            alt="Portfolio Top | MField">
+                        <!-- SVG border placeholder; JS will size/position it -->
+                        <svg class="svg-border" id="siteNameSvg" aria-hidden="true"></svg>
+                    </div>
+                </div>
+                <ul>
+                    <li class="fade-item siteName-item delay-3">
+                        <a href="#works" class="entilte">WORKS</a>
+                    </li>
+                    <li class="fade-item siteName-item delay-3">
+                        <a href="#about" class="entilte">ABOUT</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="contentsContainer">
+            <section id="works">
+                <div class="wrapper work-section">
+                    <h2 class="entilte">WORKS</h2>
+                    <div class="work_slider">
+                        <a href="./work1.html">
+                            <div class="workCard">
+                                <div class="workCard-inner">
+                                    <div class="workCard-hero">
+                                        <p class="categoryTxt">website</p>
+                                        <div class="workCard-img"><img src="./image/portfolio-ss.png" alt="作品1" /></div>
+                                    </div>
+                                    <div class="workCard-body">
+                                        <h3>Portfolio Site</h3>
+                                        <p>自分の制作物をまとめたポートフォリオサイト</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./work2.html">
+                            <div class="workCard">
+                                <div class="workCard-inner">
+                                    <div class="workCard-hero">
+                                        <p class="categoryTxt">website</p>
+                                        <div class="workCard-img"><img src="./image/gotomuseum.jpg" alt="作品2" /></div>
+                                    </div>
+                                    <div class="workCard-body">
+                                        <h3>Go 2 Museum</h3>
+                                        <p>趣味のウェブサイト、日本各地のお気に入りの美術館紹介</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./work3.html">
+                            <div class="workCard">
+                                <div class="workCard-inner">
+                                    <div class="workCard-hero">
+                                        <p class="categoryTxt">video</p>
+                                        <div class="workCard-img"><img src="./image/YouTube-yurugym.jpg" alt="作品3" /></div>
+                                    </div>
+                                    <div class="workCard-body">
+                                        <h3>ゆるジム動画</h3>
+                                        <p>(架空)ゆるジム入会キャンペーンのプロモーション動画</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./work4.html">
+                            <div class="workCard">
+                                <div class="workCard-inner">
+                                    <div class="workCard-hero">
+                                        <p class="categoryTxt">banner / LP</p>
+                                        <div class="workCard-img"><img src="./image/yurugym-image.jpg" alt="作品4" /></div>
+                                    </div>
+                                    <div class="workCard-body">
+                                        <h3>ゆるジムバナーとLP</h3>
+                                        <p>(架空)ゆるジム入会キャンペーンのバナー&LP</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./work5.html">
+                            <div class="workCard">
+                                <div class="workCard-inner">
+                                    <div class="workCard-hero">
+                                        <p class="categoryTxt">postcard</p>
+                                        <div class="workCard-img"><img src="./image/UV-omote.png" alt="作品5" /></div>
+                                    </div>
+                                    <div class="workCard-body">
+                                        <h3>UVポストカード</h3>
+                                        <p>(架空)日焼け止め先行販売のポストカード</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+            <section id="about">
+                <div class="wrapper aboutConainer">
+                    <h2 class="entilte">ABOUT</h2>
+                    <div class="about">
+                        <img src="./image/architecture-2335909_1920 (1).jpg" alt="プロフィール画像" />
+                        <div class="about-text">
+                            <p>M Field &nbsp;と申します。</p>
+                            <br>
+                            <p>”Minimal design, maximum value.”</p>
+                            <br>
+                            <p>ミニマルなデザインアプローチによりサイトの価値を最大化する制作を追求しています。</p>
+                            <br>
+                            <p>余白と情報設計を最適化し、必要な情報を直感的に伝わるデザインを重視しています。</p>
+                            <p>シンプルだからこそ、価値が際立つデザインのサイトづくりをサポートいたします。</p>
+                            <div class="skills">
+                                <div class="skillSet">
+                                    <p>Skills : </p>
+                                    <ul>
+                                        <li>Web / UI/UXデザイン
+                                            <ul>
+                                                <li>情報整理を意識した画面設計</li>
+                                                <li>ワイヤーフレーム作成(Figma)</li>
+                                                <li>実装を意識したコンポーネント設計</li>
+                                            </ul>
+                                        </li>
+                                        <li>フロントエンド実装
+                                            <ul>
+                                                <li>HTML/CSS(レスポンシブ対応)</li>
+                                                <li>JavaScript(DOM操作、簡単なUI制御)</li>
+                                            </ul>
+                                        </li>
+                                        <li>グラフィックデザイン
+                                            <ul>
+                                                <li>バナー・印刷物のデザイン制作</li>
+                                                <li>レイアウト・配色・文字組み</li>
+                                            </ul>
+                                        </li>
+                                        <li>動画制作
+                                            <ul>
+                                                <li>構成作成・カット編集</li>
+                                                <li>テロップ・簡単な演出</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="skillSet">
+                                    <p>Tools : </p>
+                                    <ul>
+                                        <li>Figma</li>
+                                        <li>Visual Studio Code</li>
+                                        <li>GitHub</li>
+                                        <li>Adobe Illustrator / Photoshop / Premium Pro / xd</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="wrapper contactContainer">
+                    <div class="contact entilte">
+                        <a href="mailto:7b17mt@gmail.com"><svg class="iconMail" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M2 4h20v16H2z" fill="none" />
+                                <path d="M22 6l-10 7L2 6" fill="none" />
+                            </svg>CONTACT</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; M Field. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
